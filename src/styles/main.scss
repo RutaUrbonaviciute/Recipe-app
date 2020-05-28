@@ -1,0 +1,45 @@
+@import 'typography';
+
+// main page
+@import 'recipes-grid';
+@import 'tools-section';
+
+// edit page
+@import 'edit/recipe';
+@import 'edit/ingredients';
+@import 'edit/description';
+@import 'edit/image-container';
+
+body {
+  box-sizing: border-box;
+  color: $text;
+  font-family: $theme-font;
+  font-size: $base-font;
+
+  a {
+    color: $color2;
+    text-decoration: none;
+  }
+  .main-wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+
+    .heading {
+      color: $main-color;
+      font-family: $heading-font;
+      font-size: 60px;
+      margin-bottom: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .subheading {
+      color: $accent;
+      font-family: $accent-font;
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
+
+// colors
+$color1: rgba(255, 255, 255, 1);
+$color2: rgba(132, 220, 198, 1);
+$color3: rgba(165, 255, 214, 1);
+
+$main-color: rgb(54, 61, 58);
+$text: rgb(54, 61, 58);
+$accent: rgb(248, 197, 74);
+$secondary-color: rgb(186, 185, 183);
+$secondary-color-accent: rgb(43, 43, 43);
+
+// fonts
+$accent-font: 'Dancing Script', cursive;
+$heading-font: 'Comfortaa', cursive;
+$theme-font: 'Open sans', sans-serif;
+
+// sizes
+$additional-font-size: 14px;
+$base-font: 18px;
+$inner-paragraph-margin: 20px;
+$paragraph-margin: 60px;
+$secondary-heading-size: 36px;
+
+%section-heading {
+  color: $main-color;
+  font-family: $heading-font;
+  font-size: $secondary-heading-size;
+  font-weight: 100;
+  margin: 0;
+}

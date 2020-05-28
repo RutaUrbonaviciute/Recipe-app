@@ -1,0 +1,46 @@
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__container {
+    border-radius: 5px;
+    display: block;
+    margin: 10px 10px 40px 10px;
+    min-width: 300px;
+    width: 300px;
+  }
+
+  &__image {
+    border-radius: 5px 5px 0 0;
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__title {
+    color: rgba(54, 61, 58, 0.9);
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  &__time {
+    color: $secondary-color;
+    font-family: $theme-font;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 0;
+  }
+
+  &__container:hover {
+    background-color: rgba(54, 61, 58, 1);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
+    .recipes__title {
+      color: $accent;
+      transition: 0.3s ease-in;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.recipe {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: left;
+  width: 500px;
+
+  &__title {
+    border-bottom: 4px solid transparent;
+    border: none;
+    color: rgb(54, 61, 58);
+    display: inline-block;
+    font-family: $heading-font;
+    font-size: 54px;
+    margin-top: $paragraph-margin;
+    max-width: 100%;
+    width: 100%;
+
+    &::-webkit-input-placeholder {
+      color: $secondary-color;
+      font-family: $accent-font;
+    }
+
+    &:hover {
+      border-bottom: 4px solid $accent;
+      cursor: pointer;
+      transition: border-bottom 0.2s ease;
+    }
+
+    &:focus {
+      border-bottom: 4px solid $accent;
+      outline: none;
+    }
+  }
+
+  &__time {
+    color: $accent;
+    font-family: $accent-font;
+    font-size: $base-font;
+    margin-bottom: $paragraph-margin;
+    margin-top: 10px;
+  }
+
+  &__save-btn {
+    background-color: rgba(54, 61, 58, 0.9);
+    border-radius: 30px;
+    border: none;
+    color: $accent;
+    display: inline-block;
+    font-family: $theme-font;
+    font-size: $base-font;
+    min-width: 70px;
+    padding: 15px 20px;
+
+    &:hover {
+      background-color: $main-color;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in;
+    }
+  }
+
+  &__delete-btn {
+    border-radius: 30px;
+    border: 2px solid rgba(54, 61, 58, 0.8);
+    color: rgba(54, 61, 58, 0.8);
+    display: inline-block;
+    font-family: $theme-font;
+    font-size: $base-font;
+    font-weight: 600;
+    margin-bottom: $paragraph-margin;
+    margin-left: $paragraph-margin;
+    min-width: 70px;
+    padding: 15px 20px;
+
+    &:hover {
+      border: 2px solid $main-color;
+      color: $main-color;
+      cursor: pointer;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+  }
+}

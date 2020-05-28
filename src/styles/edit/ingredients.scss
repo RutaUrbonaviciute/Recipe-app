@@ -1,0 +1,79 @@
+.ingredients {
+  margin-bottom: $paragraph-margin;
+  margin-top: $paragraph-margin;
+
+  &__title {
+    @extend %section-heading;
+    margin-bottom: $inner-paragraph-margin;
+  }
+
+  &__list {
+    text-align: left;
+  }
+
+  &__list-el {
+    max-width: 100%;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    text-align: left;
+    width: fit-content;
+  }
+
+  &__delete-item-btn {
+    border: none;
+    color: rgba(54, 61, 58, 1);
+    font-weight: 600;
+    height: 40px;
+    margin-left: 10px;
+    width: 40px;
+    &:hover {
+      background-color: $main-color;
+      border-radius: 20px;
+      color: $accent;
+      cursor: pointer;
+      transition: color 0.2s ease, background-color 0.2s ease;
+    }
+  }
+
+  &__form {
+    display: flex;
+    text-align: left;
+  }
+
+  &__input {
+    border-bottom: 4px solid rgba(248, 197, 74, 0.3);
+    border: none;
+    flex-grow: 1;
+    font-size: $base-font;
+    margin-right: 10px;
+    padding-left: 10px;
+
+    &:focus {
+      border-color: $accent;
+      outline: none;
+      transition: border-color $accent 0.2s;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $secondary-color;
+      font-family: $accent-font;
+      font-size: $base-font;
+    }
+  }
+
+  &__button {
+    background-color: rgba(54, 61, 58, 0.9);
+    border-radius: 30px;
+    border: none;
+    color: $accent;
+    font-family: $theme-font;
+    font-size: 16px;
+    padding: 15px 20px;
+
+    &:hover {
+      background-color: $main-color;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in;
+    }
+  }
+}

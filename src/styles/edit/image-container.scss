@@ -1,0 +1,33 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $paragraph-margin;
+
+  &__image {
+    border-radius: 5px;
+    height: 500px;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 500px;
+  }
+
+  &__label {
+    border-bottom: 4px solid transparent;
+    color: $accent;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    width: fit-content;
+
+    &:hover {
+      border-bottom: 4px solid $main-color;
+      cursor: pointer;
+      transition: border-bottom 0.2s ease;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+}

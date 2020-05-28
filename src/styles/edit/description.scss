@@ -1,0 +1,32 @@
+.description {
+  margin-bottom: $paragraph-margin;
+  margin-top: $paragraph-margin;
+
+  &__title {
+    @extend %section-heading;
+    margin-bottom: $inner-paragraph-margin;
+  }
+
+  &__body {
+    border-bottom: 4px solid rgba(248, 197, 74, 0.3);
+    border-top: 4px solid rgba(248, 197, 74, 0.3);
+    border: none;
+    font-size: $base-font;
+    margin-top: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+    width: 100%;
+
+    &:focus {
+      border-bottom: 4px solid rgba(248, 197, 74, 1);
+      border-top: 4px solid rgba(248, 197, 74, 1);
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $secondary-color;
+      font-family: $accent-font;
+    }
+  }
+}

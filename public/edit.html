@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasty recipe</title>
+  <link rel="icon" href="images/ice-cream.png">
+</head>
+
+<body>
+  <a href="/index.html">Home</a>
+
+  <div class="main-wrapper">
+    <div class="recipe">
+      <input class="recipe__title" id="recipe-title" placeholder="type title here..." type="text">
+      <div class="recipe__time" id="recipe-time"></div>
+
+
+      <div class="image-container">
+        <img class="image-container__image" id="recipe-image">
+        <label class="image-container__label" for="recipe-image-upload">Update picture <input
+            class="image-container__input" type="file" id="recipe-image-upload"
+            accept="image/png, image/jpeg, image/jpg"></label>
+      </div>
+
+
+      <div class="ingredients">
+        <h2 class="ingredients__title">Ingredients</h2>
+        <ul class="ingredients__list" id="ingredients-list"></ul>
+        <form class="ingredients__form" action="" id="ingredient-form">
+          <input class="ingredients__input" type="text" id="new-ingredient" name="newIngredient"
+            placeholder="ingredients go here">
+          <button class="ingredients__button" id="add-ingredient">Add ingredient</button>
+        </form>
+      </div>
+
+      <div class="description">
+        <h2 class="description__title">Description</h2>
+        <textarea class="description__body" id="recipe-body" placeholder="Sugar, spice, & everything nice" name=""
+          cols="30" rows="10"></textarea>
+      </div>
+
+
+
+    </div>
+
+
+    <a class="recipe__save-btn" href="/index.html">Save</a>
+    <button class="recipe__delete-btn" id="delete-recipe">Delete recipe</button>
+  </div>
+
+
+  <div class="recipe__type">
+    <label for="recipe-type"></label>
+    <select id="recipe-type" name="">
+      <option value="default">no type</option>
+    </select>
+  </div>
+  <script src="scripts/edit-bundle.js"></script>
+</body>
+
+</html>
